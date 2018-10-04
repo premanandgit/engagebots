@@ -1,0 +1,7 @@
+{
+  "nextAction": "MAIN_MENU",
+  "response": {
+    "id": "{{id}}",
+    "url": "https://engagebots.herokuapp.com/assets/2.gif"
+  }
+}

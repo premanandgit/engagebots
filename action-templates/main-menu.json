@@ -1,0 +1,49 @@
+{
+  "nextAction": "ABOUT",
+  "response": {
+    "id": "{{id}}",
+    "topElementStyle": "compact",
+    "elements": [
+      {
+        "title": "About Us",
+        "buttons": [
+          {
+            "type": "postback",
+            "title": "About",
+            "payload": "ABOUT"
+          }
+        ]
+      },
+      {
+        "title": "Our Locations",
+        "buttons": [
+          {
+            "type": "postback",
+            "title": "Location",
+            "payload": "LOCATION"
+          }
+        ]
+      },
+      {
+        "title": "Menu",
+        "buttons": [
+          {
+            "type": "postback",
+            "title": "Menu",
+            "payload": "MENU_CARDS"
+          }
+        ]
+      },
+      {
+        "title": "Looking to get in touch?",
+        "buttons": [
+          {
+            "type": "postback",
+            "title": "Contact Us ",
+            "payload": "CONTACT"
+          }
+        ]
+      }
+    ]
+  }
+}

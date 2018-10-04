@@ -1,0 +1,7 @@
+{
+  "nextAction": "MAIN_MENU",
+  "response": {
+    "id": "{{id}}",
+    "text": "Hey {{name}}! Welcome back."
+  }
+}

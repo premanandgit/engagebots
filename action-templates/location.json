@@ -1,0 +1,80 @@
+{
+  "nextAction": "ABOUT",
+  "response": {
+    "id": "{{id}}",
+    "elements": [
+      {
+        "title": "Anna Nagar",
+        "subtitle": "3, E Block, 3rd Avenue.",
+        "buttons": [
+          {
+            "type": "web_url",
+            "title": "Directions",
+            "url": "https://www.google.com/maps/search/?api=1&query=AnnaNagarSeashell",
+            "webview_height_ratio": "full"
+          }
+        ]
+      },
+      {
+        "title": "Egmore",
+        "subtitle": "55, Ali Tower, Greams Road, Opposite IDBI Bank.",
+        "buttons": [
+          {
+            "type": "web_url",
+            "title": "Directions",
+            "url": "https://www.google.com/maps/search/?api=1&query=EgmoreSeashell",
+            "webview_height_ratio": "full"
+          }
+        ]
+      },
+      {
+        "title": "Thuraipakkam",
+        "subtitle": "Vivekananda Nagar, Thuraipakkam, Chennai.",
+        "buttons": [
+          {
+            "type": "web_url",
+            "title": "Directions",
+            "url": "https://www.google.com/maps/search/?api=1&query=ThuraipakkamSeashell",
+            "webview_height_ratio": "full"
+          }
+        ]
+      },
+      {
+        "title": "Velachery",
+        "subtitle": "3, 3rd Cross Street, Vijaya Nagar.",
+        "buttons": [
+          {
+            "type": "web_url",
+            "title": "Directions",
+            "url": "https://www.google.com/maps/search/?api=1&query=VelacherySeashell",
+            "webview_height_ratio": "full"
+          }
+        ]
+      },
+      {
+        "title": "Okkiyampet",
+        "subtitle": "5/337A, Rajiv Gandhi Salai, OMR",
+        "buttons": [
+          {
+            "type": "web_url",
+            "title": "Directions",
+            "url": "https://www.google.com/maps/search/?api=1&query=OkkiyampetSeashell",
+            "webview_height_ratio": "full"
+          }
+        ]
+      },
+      {
+        "title": "Perungudi",
+        "subtitle": "391/1, Old Mahabalipuram Road, Nehru Nagar",
+        "buttons": [
+          {
+            "type": "web_url",
+            "title": "Directions",
+            "url": "https://www.google.com/maps/search/?api=1&query=PerungudiSeashell",
+            "webview_height_ratio": "full"
+          }
+        ]
+      }
+    ]
+  }
+}

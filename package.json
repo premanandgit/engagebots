@@ -1,0 +1,23 @@
+{
+  "name": "engagebots",
+  "version": "1.0.0",
+  "description": "A bot for engage",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prem",
+  "license": "ISC",
+  "engines": {
+    "node": "8.12.0",
+    "npm": "6.4.1"
+  },
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "botlib": "github:premanandgit/botlib#master",
+    "express": "4.16.3",
+    "express-session": "1.15.6",
+    "mustache": "3.0.0"
+  }
+}

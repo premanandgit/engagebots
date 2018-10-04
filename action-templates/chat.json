@@ -1,0 +1,7 @@
+{
+  "nextAction": "START",
+  "response": {
+    "id": "{{id}}",
+    "text": "I am not sure about that item yet, but I am learning quickly. Check back with me later!"
+  }
+}

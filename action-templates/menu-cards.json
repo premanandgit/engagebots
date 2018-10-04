@@ -1,0 +1,29 @@
+{
+  "nextAction": "MAIN_MENU",
+  "response": {
+    "id": "{{id}}",
+    "attachment": "Please select from the options below.",
+    "quickReplies": [
+      {
+        "content_type": "text",
+        "title": "Reserve a Table 🛎️",
+        "payload": "RESERVATION"
+      },
+      {
+        "content_type": "text",
+        "title": "View Menu",
+        "payload": "MENU_CARDS"
+      },
+      {
+        "content_type": "text",
+        "title": "Map",
+        "payload": "LOCATION"
+      },
+      {
+        "content_type": "text",
+        "title": "Main Menu",
+        "payload": "MAIN_MENU"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "engage-seashell",
+  "private_key_id": "cc79f1e624ced3b9aa4fe381994347a098ec6ff4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDi4HssLUiMgqy4\ndEVQ5bT1M1eanxXFJ7cu5HLjLVhgtomu3knrT2k+qGYQKhaytW2oCnRI9ars6ARU\n/5caIoKX0fozMux9tfJ0fEBeXnOfz4o8bv97UPVVW6U+wVQmgHyAvVbC54dXWtaE\nBm1QCBGhs9Q22i2cdxeT2AwWT5TZEDyukUtmIVNAlYb0Nile8xxAD4k9kU0BFYRa\nctKKZ+F9j49WqT5Gy2Vbjy0QLTN7dTxc+hnci+fsB+q3TGRSy5RbaHM+oQM2XSTU\nXEOqClTuPs/TsTuhWghQsVJkKFTRixEIbFtGwIPpwrlubXbEBH338kag/qgoWy2z\n7LkDf7pXAgMBAAECggEAXo83ZzM8gKvaN0rmtQ/4exY6FgzmMvUZqWa35623nx+V\nhRfK8VN4xw/C8kvIiBWMLbSlwN77raAKZi7dGJx3l7WBtaMs5DxYYGqFHY/6WwpS\nUFvnCcu1ZS08U0qauy1kNvgzWCrNwv/uVrqjBu9GAgKEmZQX3JXactliOE5U+J69\nzJuG07q8rWQ3+AmGiI9Lg+K8z8JJZBmITMTMuOBnlQynthtck9jSamkOjsfbY0WD\na8GJXkkppemTeYAa9drrIFxtD4LXH2kCwKWgj0zToAeotQupn4X/S8oEj68nsu3w\nn3fD+Wljv4HoztjXGzi6uKrOWYZOC768PaVo+hXZ+QKBgQD7AYvfxYbwSlQl7PYN\nQEXkVwa40C43mziqHYAdft8AnndVdyvnZrIrC9OOWFJxmA7QH1lH78waBaGFvh3o\nPaLKN2vvFWbhdWmPMM3ErzrWbOpoMmsh22nRsf6nGs70E6aiXVm5VG342Iq/4t9G\n6FA15iewWKfeAg/OiNcMZnWv6wKBgQDnZAmKQzHuJXkjzp6MLB4uGveBtL7fd4x0\nXC86VrKzs+8HRAO1718TbJ0HlabVils3dE5AE8UU2K1UGlDnfNz6ge/ZvReeIQiO\nz0/ELy2s7T9KtdebM2Ffz/4QjicVWfq0ZwvQnkA86fipu/ml+YclVSdCM7bUeirx\nvFGQ1tHwRQKBgHfCjB9PWoupmy6hOeCmqvJAh4eEZJjJaabY/niUQQhFk4BmpL76\no8WgFedTwrpKJ78rRejpxAMibqemRxS428QJ32iqWHT4FU5ppbPTO4p1Wv4uGCmG\nS53uhCbsxpN0EMxlJ9siKnpRrxnQwGFPlH2y+3rLQgTODQapCZn0BPDTAoGBAJdK\nPzqZiLHu6m/RDrUTu3/lveKerRYrcjg6dd6tBRaeFTEo9UwlgIKQx3NIE9cXKWDu\nuKMIyhlBOsL8md1hNJLOFmbFTgXkD1ZgkgTx2+lvDazpjFk7lPUyZymn6EH7nQIL\nRhxW/CVXzXAdKbOtnQF51bthWK9AWYfI24PaEVYJAoGAKkRb62uqTHrsUjhMmUYA\nwgMHx7A5/rAMoRhde21tLV0icKSJPz6/IDe6D3+1WfP6t0zlenWbULixDqYaa994\nf7HiuEUBo3gywLbZMhkjANMNuF5OVwv9XiocVbOjXALUpw3HRS5stnZm6cxgao6Y\nfaPOVdWCrSX/jYqZ9tlOSvE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-hbfnnm@engage-seashell.iam.gserviceaccount.com",
+  "client_id": "117628188863852005518",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-hbfnnm%40engage-seashell.iam.gserviceaccount.com"
+}
