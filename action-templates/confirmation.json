@@ -1,0 +1,19 @@
+{
+  "nextAction": "MAIN_MENU",
+  "response": {
+    "id": "{{id}}",
+    "attachment": "Shall we confirm your Reservation? 🕘",
+    "quickReplies": [
+      {
+        "content_type": "text",
+        "title": "Yes",
+        "payload": "RESERVATION_YES"
+      },
+      {
+        "content_type": "text",
+        "title": "No",
+        "payload": "RESERVATION_NO"
+      }
+    ]
+  }
+}

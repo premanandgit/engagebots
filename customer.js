@@ -5,7 +5,11 @@ module.exports = async (customerId, profile) => {
 		name: profile ? profile.first_name : "Face Book User",
 		action: '',
 		searchText: {},
-		zipcode: null,
+		reservationDate: null,
+		reservationTime: null,
+		reservationCount: 0,
+		notesOfReservation: {},
+		phone: null,
 		profile: profile
 	})
 }

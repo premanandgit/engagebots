@@ -18,7 +18,7 @@ module.exports = (intent) => {
 			else {
 				let payload = intent.postback.payload;
 				if (payload) {
-					action(customer, payload, intent)
+					action(customer, payload.split('|')[0], intent, payload)
 				}
 			}	
 		})

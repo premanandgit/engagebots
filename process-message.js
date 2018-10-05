@@ -18,7 +18,7 @@ module.exports = (intent) => {
 
       if (message.quick_reply) {
         if (message.quick_reply.payload) {
-          action(customer, message.quick_reply.payload, intent)
+          action(customer, message.quick_reply.payload.split('|')[0], intent, message.quick_reply.payload)
         }
       }
       else if (message.text) {

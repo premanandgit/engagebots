@@ -1,0 +1,19 @@
+{
+  "nextAction": "MAIN_MENU",
+  "response": {
+    "id": "{{id}}",
+    "attachment": "Would you like to come for lunch or dinner? ",
+    "quickReplies": [
+      {
+        "content_type": "text",
+        "title": "Lunch",
+        "payload": "RESERVE_LUNCH"
+      },
+      {
+        "content_type": "text",
+        "title": "Dinner",
+        "payload": "RESERVE_DINNER"
+      }
+    ]
+  }
+}

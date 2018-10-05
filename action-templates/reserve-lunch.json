@@ -1,0 +1,49 @@
+{
+	"nextAction": "MAIN_MENU",
+	"response": {
+		"id": "{{id}}",
+		"attachment": "When would you like to come? 🕘",
+		"quickReplies": [
+			{
+				"content_type": "text",
+				"title": "11:30",
+				"payload": "RESERVE_TIME|11:30 AM"
+			},
+			{
+				"content_type": "text",
+				"title": "12:00",
+				"payload": "RESERVE_TIME|12:00 PM"
+			},
+			{
+				"content_type": "text",
+				"title": "12:30",
+				"payload": "RESERVE_TIME|12:30 PM"
+			},
+			{
+				"content_type": "text",
+				"title": "01:00",
+				"payload": "RESERVE_TIME|01:00 PM"
+			},
+			{
+				"content_type": "text",
+				"title": "01:30",
+				"payload": "RESERVE_TIME|01:30 PM"
+			},
+			{
+				"content_type": "text",
+				"title": "02:00",
+				"payload": "RESERVE_TIME|02:00 PM"
+			},
+			{
+				"content_type": "text",
+				"title": "02:30",
+				"payload": "RESERVE_TIME|02:30 PM"
+			},
+			{
+				"content_type": "text",
+				"title": "03:00",
+				"payload": "RESERVE_TIME|03:00 PM"
+			}
+		]
+	}
+}

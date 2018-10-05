@@ -1,0 +1,29 @@
+{
+  "nextAction": "MAIN_MENU",
+  "response": {
+    "id": "{{id}}",
+    "attachment": "What date would you like to make a reservation for?",
+    "quickReplies": [
+      {
+        "content_type": "text",
+        "title": "Today",
+        "payload": "RESERVATION_DATE"
+      },
+      {
+        "content_type": "text",
+        "title": "Tomorrow",
+        "payload": "RESERVATION_DATE"
+      },
+      {
+        "content_type": "text",
+        "title": "Enter Date",
+        "payload": "RESERVATION_CUSTOM_DATE"
+      },
+      {
+        "content_type": "text",
+        "title": "Cancel",
+        "payload": "RESERVATION_CANCEL"
+      }
+    ]
+  }
+}

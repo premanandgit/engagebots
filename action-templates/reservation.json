@@ -1,0 +1,59 @@
+{
+  "nextAction": "MAIN_MENU",
+  "response": {
+    "id": "{{id}}",
+    "attachment": "How many attendees? 👨‍👩‍👧‍👦 ",
+    "quickReplies": [
+      {
+        "content_type": "text",
+        "title": "1",
+        "payload": "RESERVATION_COUNT"
+      },
+      {
+        "content_type": "text",
+        "title": "2",
+        "payload": "RESERVATION_COUNT"
+      },
+      {
+        "content_type": "text",
+        "title": "3",
+        "payload": "RESERVATION_COUNT"
+      },
+      {
+        "content_type": "text",
+        "title": "4",
+        "payload": "RESERVATION_COUNT"
+      },
+      {
+        "content_type": "text",
+        "title": "5",
+        "payload": "RESERVATION_COUNT"
+      },
+      {
+        "content_type": "text",
+        "title": "6",
+        "payload": "RESERVATION_COUNT"
+      },
+      {
+        "content_type": "text",
+        "title": "7",
+        "payload": "RESERVATION_COUNT"
+      },
+      {
+        "content_type": "text",
+        "title": "8",
+        "payload": "RESERVATION_COUNT"
+      },
+      {
+        "content_type": "text",
+        "title": "9",
+        "payload": "RESERVATION_COUNT"
+      },
+      {
+        "content_type": "text",
+        "title": "Greater than 10?",
+        "payload": "RESERVATION_COUNT_UNKNOWN"
+      }
+    ]
+  }
+}
