@@ -1,7 +1,12 @@
 {
+  "GET_STARTED": "Hey, Welcome to Sea Shell.",
+  "START": "Hey, Welcome back.",
+  "BOT_INFO": "I am a Automated Chat Bot, Am here to help you with information about Sea Shell",
   "RESERVATION_COUNT_UNKNOWN": "How many of you are coming? 😃",
   "RESERVATION_CUSTOM_DATE": "Please enter date, for example 3 Oct 2018 or 03/10/2018",
   "RESERVATION_CANCEL": "Alright! Reservation Cancelled.",
   "RESERVATION_YES": "Please enter your 10-Digit mobile number. 📱",
-  "ENTER_OTP": "Please enter your OTP."
+  "ENTER_OTP": "Please enter your OTP.",
+  "PROMOTIONS": "Sorry there are no promotions going on right now.",
+  "LOCATION": "Anna Nagar East \n3, E Block, 3rd Avenue, Anna Nagar East, Chennai. \n\nEgmore \n55, Ali Tower, Greams Road, Opposite IDBI Bank, Egmore, Chennai. \n\nThuraipakkam \nVivekananda Nagar, Thuraipakkam, Chennai. \n\nVelachery \n3, 3rd Cross Street, Vijaya Nagar, Velachery, Chennai. \n\nOkkiyampet \n5 / 337A, Rajiv Gandhi Salai, OMR, Okkiyampet, Chennai. \n\nPerungudi \n391 / 1, Old Mahabalipuram Road, Nehru Nagar, Kandanchavadi, Perungudi, Chennai"
 }

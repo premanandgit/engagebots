@@ -7,22 +7,21 @@ module.exports = (intent) => {
 	try {
 		console.log('Sender ', intent.sender.id)
 		return customerSession.create(intent.sender.id, createCustomer)
-		.then(customer => {
-			if(!customer) {
-        console.log("Error: Customer session is null")
-        return;
-			} 
-			
-			if(intent.postback.title === 'Get Started')
-				action(customer, 'GET_STARTED', intent)
-			else {
-				let payload = intent.postback.payload;
-				if (payload) {
-					action(customer, payload.split('|')[0], intent, payload)
+			.then(customer => {
+				if (!customer) {
+					console.log("Error: Customer session is null")
+					return;
 				}
-			}	
-		})
-	} catch(error) {
+
+				let { postback } = intent
+				let { referral } = postback
+				console.log('referral ', referral)
+				let payload = referral ? referral.ref : postback.payload
+				if (payload) {
+					action(payload.split('|')[0], customer, payload)
+				}
+			})
+	} catch (error) {
 		console.log("Error while processing postback message ", error)
 		return null
 	}

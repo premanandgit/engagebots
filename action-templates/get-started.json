@@ -1,7 +1,6 @@
 {
-  "nextAction": "WELCOME_IMAGE",
   "response": {
     "id": "{{id}}",
-    "text": "Hey {{name}}! Thanks for reaching out! I am the official Virtual Assistant for Sea Shell."
+    "text": "Hey, Welcome to Sea Shell."
   }
 }

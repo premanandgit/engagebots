@@ -1,0 +1,46 @@
+{
+  "persistent_menu": [
+    {
+      "locale": "default",
+      "call_to_actions": [
+        {
+          "type": "postback",
+          "title": "Promotions",
+          "payload": "PROMOTIONS"
+        },
+        {
+          "type": "postback",
+          "title": "Chat With Team",
+          "payload": "CHAT"
+        },
+        {
+          "title": "More",
+          "type": "nested",
+          "call_to_actions": [
+            {
+              "type": "postback",
+              "title": "Menu",
+              "payload": "MENU_CARDS"
+            },
+            {
+              "type": "postback",
+              "title": "Contact Us",
+              "payload": "CONTACT"
+            },
+            {
+              "type": "postback",
+              "title": "Directions",
+              "payload": "LOCATION"
+            },
+            {
+              "type": "web_url",
+              "title": "Powered By Yali 💪",
+              "url": "https://yali.tech/",
+              "webview_height_ratio": "full"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

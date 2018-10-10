@@ -1,0 +1,34 @@
+{
+  "nextAction": "RATE_SERVICE",
+  "response": {
+    "id": "{{id}}",
+    "attachment": "How was the Food? 🍔🍝🍟🍜🍱",
+    "quickReplies": [
+      {
+        "content_type": "text",
+        "title": "⭐⭐⭐⭐⭐",
+        "payload": "FEEDBACK_FOOD|5"
+      },
+      {
+        "content_type": "text",
+        "title": "⭐⭐⭐⭐ ",
+        "payload": "FEEDBACK_FOOD|4"
+      },
+      {
+        "content_type": "text",
+        "title": "⭐⭐⭐",
+        "payload": "FEEDBACK_FOOD|3"
+      },
+      {
+        "content_type": "text",
+        "title": "⭐⭐",
+        "payload": "FEEDBACK_FOOD|2"
+      },
+      {
+        "content_type": "text",
+        "title": "⭐",
+        "payload": "FEEDBACK_FOOD|5"
+      }
+    ]
+  }
+}

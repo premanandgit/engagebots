@@ -7,51 +7,51 @@
       {
         "content_type": "text",
         "title": "1",
-        "payload": "RESERVATION_COUNT"
+        "payload": "RESERVATION_COUNT|1"
       },
       {
         "content_type": "text",
         "title": "2",
-        "payload": "RESERVATION_COUNT"
+        "payload": "RESERVATION_COUNT|2"
       },
       {
         "content_type": "text",
         "title": "3",
-        "payload": "RESERVATION_COUNT"
+        "payload": "RESERVATION_COUNT|3"
       },
       {
         "content_type": "text",
         "title": "4",
-        "payload": "RESERVATION_COUNT"
+        "payload": "RESERVATION_COUNT|4"
       },
       {
         "content_type": "text",
         "title": "5",
-        "payload": "RESERVATION_COUNT"
+        "payload": "RESERVATION_COUNT|5"
       },
       {
         "content_type": "text",
         "title": "6",
-        "payload": "RESERVATION_COUNT"
+        "payload": "RESERVATION_COUNT|6"
       },
       {
         "content_type": "text",
         "title": "7",
-        "payload": "RESERVATION_COUNT"
+        "payload": "RESERVATION_COUNT|7"
       },
       {
         "content_type": "text",
         "title": "8",
-        "payload": "RESERVATION_COUNT"
+        "payload": "RESERVATION_COUNT|8"
       },
       {
         "content_type": "text",
         "title": "9",
-        "payload": "RESERVATION_COUNT"
+        "payload": "RESERVATION_COUNT|9"
       },
       {
         "content_type": "text",
-        "title": "Greater than 10?",
+        "title": "Greater than 9?",
         "payload": "RESERVATION_COUNT_UNKNOWN"
       }
     ]

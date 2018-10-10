@@ -7,12 +7,12 @@
       {
         "content_type": "text",
         "title": "Today",
-        "payload": "RESERVATION_DATE"
+        "payload": "RESERVATION_DATE|TODAY"
       },
       {
         "content_type": "text",
         "title": "Tomorrow",
-        "payload": "RESERVATION_DATE"
+        "payload": "RESERVATION_DATE|TOMORROW"
       },
       {
         "content_type": "text",

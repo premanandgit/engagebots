@@ -1,0 +1,34 @@
+{
+  "nextAction": "FEEDBACK_COMMENTS",
+  "response": {
+    "id": "{{id}}",
+    "attachment": "What do you feel about our Ambiemce?",
+    "quickReplies": [
+      {
+        "content_type": "text",
+        "title": "⭐⭐⭐⭐⭐",
+        "payload": "FEEDBACK_AMBIENCE|5"
+      },
+      {
+        "content_type": "text",
+        "title": "⭐⭐⭐⭐ ",
+        "payload": "FEEDBACK_AMBIENCE|4"
+      },
+      {
+        "content_type": "text",
+        "title": "⭐⭐⭐",
+        "payload": "FEEDBACK_AMBIENCE|3"
+      },
+      {
+        "content_type": "text",
+        "title": "⭐⭐",
+        "payload": "FEEDBACK_AMBIENCE|2"
+      },
+      {
+        "content_type": "text",
+        "title": "⭐",
+        "payload": "FEEDBACK_AMBIENCE|5"
+      }
+    ]
+  }
+}
