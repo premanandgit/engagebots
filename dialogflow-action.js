@@ -53,10 +53,10 @@ module.exports = (customer, messageText) => {
             messenger.sendTextMessage({ id: customer.id, text: responseText })
             break
           default:
-            action("CHAT", customer, messageText)
+            action("UNKNOWN", customer, messageText)
         }
       } else {
-        action("CHAT", customer, messageText)
+        action("UNKNOWN", customer, messageText)
       }
     })
 }

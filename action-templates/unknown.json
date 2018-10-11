@@ -1,0 +1,7 @@
+{
+  "nextAction": "START",
+  "response": {
+    "id": "{{id}}",
+    "text": "Sorry I dont understand what you are looking for. Please click on button below to know more."
+  }
+}

@@ -8,7 +8,7 @@ const joi = require('joi')
 const moment = require('moment');
 const ABOUT = require('./action-templates/about.json')
 const ADD_MENU = require('./action-templates/add-menu.json')
-const CHAT = require('./action-templates/chat.json')
+const UNKNOWN = require('./action-templates/unknown.json')
 const CONTACT = require('./action-templates/contact.json')
 const CONFIRMATION = require('./action-templates/confirmation.json')
 const GET_STARTED = require('./action-templates/get-started.json')
@@ -70,8 +70,8 @@ module.exports = (action, customer, message) => {
 		messenger.sendGenericMessage(getTemplateRespone(LOCATION, { id: customer.id }))
 	}
 
-	function chat() {
-		let templateJson = JSON.parse(jsont.render(JSON.stringify(CHAT), { id: customer.id }))
+	function unknown() {
+		let templateJson = JSON.parse(jsont.render(JSON.stringify(UNKNOWN), { id: customer.id }))
 		return messenger.sendTextMessage(templateJson.response)
 	}
 
@@ -98,7 +98,7 @@ module.exports = (action, customer, message) => {
 			case "addmenu":
 				messenger.addPersistentMenu(ADD_MENU)
 				break
-				
+
 			case "removemenu":
 				messenger.setPersistentMenu({ pageId: 'me', menuItems: [] })
 				break
@@ -154,7 +154,7 @@ module.exports = (action, customer, message) => {
 			case "GET_RESERVATION_COUNT":
 				const { error: countError } = joi.validate({ count: messageText }, reservationCountSchema);
 				if (countError) {
-					messenger.sendTextMessage({ id: customer.id, text: "Count is not valid" })
+					messenger.sendTextMessage({ id: customer.id, text: TEXT_TEMPLATE.RESERVATION_COUNT_INVALID })
 				} else {
 					customer.reservationCount = messageText
 					messenger.sendTextMessage({ id: customer.id, text: `${messageText} of ya'll, Awesome! 😃` })
@@ -178,14 +178,14 @@ module.exports = (action, customer, message) => {
 
 					const { error: dateError } = joi.validate({ date: reservationDate }, reservationDateSchema);
 					if (dateError) {
-						messenger.sendTextMessage({ id: customer.id, text: "Please try to enter valid date" })
+						messenger.sendTextMessage({ id: customer.id, text: TEXT_TEMPLATE.INVALID_DATE })
 					} else {
 						customer.reservationDate = reservationDate
 						messenger.sendQuickRepliesMessage(getTemplateRespone(RESERVATION_DATE, { id: customer.id }))
 					}
 				}
 				else {
-					messenger.sendTextMessage({ id: customer.id, text: "Please try to enter valid date" })
+					messenger.sendTextMessage({ id: customer.id, text: TEXT_TEMPLATE.INVALID_DATE })
 				}
 				break
 
@@ -221,7 +221,7 @@ module.exports = (action, customer, message) => {
 			case "GET_PHONE_NO":
 				const { error, value } = joi.validate({ phone: messageText }, phoneSchema);
 				if (error) {
-					messenger.sendTextMessage({ id: customer.id, text: "Phone number is not valid" })
+					messenger.sendTextMessage({ id: customer.id, text: TEXT_TEMPLATE.INVALID_PHONE_NO })
 				} else {
 					customer.action = "GET_OTP"
 					customer.phone = messageText
@@ -230,29 +230,28 @@ module.exports = (action, customer, message) => {
 							if (otpNumber) {
 								messenger.sendTextMessage({ id: customer.id, text: TEXT_TEMPLATE.ENTER_OTP })
 							} else {
-								messenger.sendTextMessage({ id: customer.id, text: 'Please try after some time' })
+								customer.action = "GET_PHONE_NO"
+								messenger.sendTextMessage({ id: customer.id, text: TEXT_TEMPLATE.OTP_PROBLEM })
 							}
 						})
 				}
-
-
 				break
 
 			case "GET_OTP":
 				const { error: otpError } = joi.validate({ otp: messageText }, otpSchema);
 				if (otpError) {
-					messenger.sendTextMessage({ id: customer.id, text: "The OTP is invalid, please verify and type it down again #PLSWORK." })
+					messenger.sendTextMessage({ id: customer.id, text: TEXT_TEMPLATE.OTP_INVALID })
 				} else {
 					otp.verify(customer.phone, messageText)
 						.then(otpNumber => {
 							if (otpNumber) {
 								yaliService.createReservation(customer)
-								.then(() => {
-									messenger.sendTextMessage({ id: customer.id, text: `Your Reservation for ${customer.reservationDate} at ${customer.reservationTime} is confirmed! .For any queries on your reservation , call us @+91-9444512152 Thank you.` })
-									resetCustomer()
-								})
+									.then(() => {
+										messenger.sendTextMessage({ id: customer.id, text: `Your Reservation for ${customer.reservationDate} at ${customer.reservationTime} is confirmed! .For any queries on your reservation , call us @+91-9444512152 Thank you.` })
+										resetCustomer()
+									})
 							} else {
-								messenger.sendTextMessage({ id: customer.id, text: "The OTP is invalid, please verify and type it down again #PLSWORK." })
+								messenger.sendTextMessage({ id: customer.id, text: TEXT_TEMPLATE.OTP_INVALID })
 							}
 						})
 				}
@@ -263,23 +262,28 @@ module.exports = (action, customer, message) => {
 				get_started()
 				break
 
-			case "FEEDBACK_FOOD":
-				customer.feedback.food = message.split('|')[1]
-				messenger.sendQuickRepliesMessage(getTemplateRespone(CONFIRMATION, { id: customer.id }))
+			// case "FEEDBACK":
+			// 	customer.feedback.food = message.split('|')[1]
+			// 	messenger.sendQuickRepliesMessage(getTemplateRespone(CONFIRMATION, { id: customer.id }))
+			// 	break
+
+			// case "FEEDBACK_SERVICE":
+			// 	customer.feedback.service = message.split('|')[1]
+			// 	messenger.sendQuickRepliesMessage(getTemplateRespone(CONFIRMATION, { id: customer.id }))
+			// 	break
+
+			// case "FEEDBACK_AMBIENCE":
+			// 	customer.feedback.ambience = message.split('|')[1]
+			// 	messenger.sendQuickRepliesMessage(getTemplateRespone(CONFIRMATION, { id: customer.id }))
+			// 	break
+
+			case "UNKNOWN":
+				unknown().then(() => messenger.sendListMessage(getTemplateRespone(MAIN_MENU, { id: customer.id })))
 				break
 
-			case "FEEDBACK_SERVICE":
-				customer.feedback.service = message.split('|')[1]
-				messenger.sendQuickRepliesMessage(getTemplateRespone(CONFIRMATION, { id: customer.id }))
-				break
-
-			case "FEEDBACK_AMBIENCE":
-				customer.feedback.ambience = message.split('|')[1]
-				messenger.sendQuickRepliesMessage(getTemplateRespone(CONFIRMATION, { id: customer.id }))
-				break
-
-			case "CHAT":
-				chat().then(() => messenger.sendListMessage(getTemplateRespone(MAIN_MENU, { id: customer.id })))
+			case "CHATUS":
+				messenger.sendTextMessage({ id: customer.id, text: TEXT_TEMPLATE.HANDOVER })
+					.then(() => messenger.handOver({ id: customer.id }))
 				break
 
 			default:

@@ -24,4 +24,4 @@ botRouter.on('botPostBack', (messaging) => {
 	processPostback(messaging)
 })
 
-app.listen(config.getPort(), () => console.log(`Engage bot is listening on port ${config.getPort()}`))
+app.listen(config.getPort(), () => console.log(`${config.getBotName()} is listening on port ${config.getPort()}`))
